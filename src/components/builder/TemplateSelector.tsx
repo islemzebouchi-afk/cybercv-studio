@@ -10,6 +10,7 @@ const templates: { id: TemplateStyle; name: string; colors: string }[] = [
   { id: 'minimalist', name: 'Minimalist White', colors: 'from-gray-100 to-white' },
   { id: 'modern-dark', name: 'Modern Dark', colors: 'from-gray-900 to-gray-800' },
   { id: 'creative-blue', name: 'Creative Blue', colors: 'from-blue-600 to-blue-400' },
+  { id: 'professional-photo', name: 'Professional Photo', colors: 'from-emerald-600 to-teal-500' },
 ];
 
 const TemplateSelector = ({ selected, onSelect }: Props) => (
