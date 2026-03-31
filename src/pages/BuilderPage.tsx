@@ -75,7 +75,7 @@ const BuilderPage = () => {
       </motion.header>
 
       {/* Editor */}
-      <div className="flex-1 flex flex-col lg:flex-row overflow-y-auto lg:overflow-hidden">
+      <div className="flex-1 flex flex-col lg:flex-row overflow-y-auto">
         {/* Form panel */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
