@@ -36,7 +36,7 @@ export interface ResumeData {
   education: Education[];
 }
 
-export type TemplateStyle = 'minimalist' | 'modern-dark' | 'creative-blue';
+export type TemplateStyle = 'minimalist' | 'modern-dark' | 'creative-blue' | 'professional-photo';
 
 export const defaultResumeData: ResumeData = {
   personalInfo: {
