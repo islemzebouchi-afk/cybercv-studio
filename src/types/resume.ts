@@ -46,6 +46,7 @@ export const defaultResumeData: ResumeData = {
     phone: '+1 (555) 123-4567',
     location: 'San Francisco, CA',
     summary: 'Passionate engineer with 8+ years of experience building scalable web applications and leading cross-functional teams.',
+    photo: '',
     linkedin: 'linkedin.com/in/alexjohnson',
     website: 'alexjohnson.dev',
   },
