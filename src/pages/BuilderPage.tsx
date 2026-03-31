@@ -75,7 +75,7 @@ const BuilderPage = () => {
       </motion.header>
 
       {/* Editor */}
-      <div className="flex-1 flex overflow-hidden">
+      <div className="flex-1 flex flex-col lg:flex-row overflow-y-auto lg:overflow-hidden">
         {/* Form panel */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
@@ -86,11 +86,11 @@ const BuilderPage = () => {
         </motion.div>
 
         {/* Preview panel */}
-        <div className="hidden lg:flex flex-1 items-start justify-center p-8 overflow-y-auto bg-muted/30 cyber-grid">
+        <div className="flex flex-1 items-start justify-center p-4 lg:p-8 overflow-y-auto bg-muted/30 cyber-grid">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="w-[210mm] shadow-2xl shadow-primary/5 rounded-lg overflow-hidden"
+            className="w-full max-w-[210mm] scale-[0.6] origin-top sm:scale-100 shadow-2xl ..."
             style={{ maxWidth: '100%' }}
           >
             <ResumePreview ref={previewRef} data={data} template={template} />
