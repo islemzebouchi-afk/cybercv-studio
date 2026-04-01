@@ -86,11 +86,11 @@ const BuilderPage = () => {
         </motion.div>
 
         {/* Preview panel */}
-        <div className="flex flex-1 items-start justify-center p-4 lg:p-8 overflow-y-auto overflow-x-hidden bg-muted/30 cyber-grid">
+        <div className="flex flex-1 items-start justify-center p-4 lg:p-8 overflow-x-hidden bg-muted/30 cyber-grid">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="w-[210mm] max-w-full scale-[0.4] xs:scale-[0.5] sm:scale-100 origin-top shadow-2xl mb-20"
+            className="w-[210mm] max-w-full scale-[0.5] xs:scale-[0.6] sm:scale-100 origin-top shadow-2xl mb-[-400px]"
             style={{ maxWidth: '100%' }}
           >
             <ResumePreview ref={previewRef} data={data} template={template} />
