@@ -73,7 +73,7 @@ const MinimalistTemplate = ({ data }: { data: ResumeData }) => (
             <div>
               <h3 className="font-semibold text-sm">{edu.degree} in {edu.field}</h3>
               <p className="text-sm text-gray-500">{edu.institution}</p>
-              <p className="mt-2 text-sm text-gray-600 whitespace-pre-wrap break-words max-w-[150mm]">
+              <p className="mt-2 text-sm text-gray-600 whitespace-pre-wrap break-all w-full max-w-[150mm]">
   {(edu as any).description}
 </p>
             </div>
@@ -145,6 +145,9 @@ const ModernDarkTemplate = ({ data }: { data: ResumeData }) => (
             <div>
               <h3 className="font-semibold text-sm">{edu.degree} in {edu.field}</h3>
               <p className="text-sm text-gray-400">{edu.institution}</p>
+              <p className="mt-2 text-sm text-gray-600 whitespace-pre-wrap break-all w-full max-w-[150mm]">
+  {(edu as any).description}
+</p>
             </div>
             <span className="text-xs text-gray-500">{formatDate(edu.startDate)} — {formatDate(edu.endDate)}</span>
           </div>
@@ -215,6 +218,9 @@ const CreativeBlueTemplate = ({ data }: { data: ResumeData }) => (
               <div>
                 <h3 className="font-semibold text-sm">{edu.degree} in {edu.field}</h3>
                 <p className="text-sm text-blue-500">{edu.institution}</p>
+                <p className="mt-2 text-sm text-gray-600 whitespace-pre-wrap break-all w-full max-w-[150mm]">
+  {(edu as any).description}
+</p>
               </div>
               <span className="text-xs text-gray-400">{formatDate(edu.startDate)} — {formatDate(edu.endDate)}</span>
             </div>
